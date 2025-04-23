@@ -1,0 +1,15 @@
+#!/bin/sh
+
+
+
+# target task with no pretext task
+python main_val_ES_ref.py '/path/to/target/data/' '/path/to/output/folder/' lr wd delta > /path/to/output/folder/log.txt
+
+# target task with ASPECTS pretext task
+python main_val_ES_cible.py '/path/to/target/data/' '/path/to/pretrained/models/with/aspects/task/checkpoint.pth' '/path/to/output/folder/' lr wd delta > /path/to/output/folder/log.txt
+
+# target task with inpainting pretext task
+python main_val_ES_cible.py '/path/to/target/data/' '/path/to/pretrained/models/with/inpainting/task/checkpoint.pth' '/path/to/output/folder/' lr wd delta > /path/to/output/folder/log.txt
+
+# target task with rotation pretext task
+python main_val_ES_classif_cible.py '/path/to/target/data/' '/path/to/pretrained/models/with/rotation/task/checkpoint.pth' '/path/to/output/folder/' lr wd delta > /path/to/output/folder/log.txt

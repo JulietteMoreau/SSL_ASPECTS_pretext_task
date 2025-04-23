@@ -1,0 +1,11 @@
+#!/bin/sh
+
+
+# ASPECTS pretext task
+python main_pretext_ASPECTS.py '/path/to/ASPECTS/pretext/data/' '/path/to/output/folder/' lr > /path/to/output/folder/log.txt
+
+# inpainting pretext task
+python main_pretext_inpainting.py '/path/to/inpainting/pretext/data/' '/path/to/output/folder/' lr > /path/to/output/folder/log.txt
+
+# rotation pretext task
+python main_pretext_classif.py '/path/to/rotation/pretext/data/' '/path/to/output/folder/' lr > /path/to/output/folder/log.txt
